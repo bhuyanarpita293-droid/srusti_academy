@@ -1,0 +1,539 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f8fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* ================= TOP BAR ================= */
+
+.topbar {
+    background-color: #173d83;
+    color: white;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 8px 7%;
+
+    font-size: 13px;
+}
+
+.topbar span {
+    cursor: pointer;
+}
+
+
+/* ================= COLLEGE HEADER ================= */
+
+header {
+    background-color: white;
+}
+
+.college-header {
+    max-width: 1200px;
+    min-height: 115px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 18px 30px;
+}
+
+
+/* LOGO */
+
+.logo {
+    width: 70px;
+    height: 70px;
+
+    background-color: #f2a900;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 19px;
+    font-weight: bold;
+
+    border-radius: 6px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+
+/* COLLEGE NAME */
+
+.college-name h1 {
+    color: #173d83;
+
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+    line-height: 1.2;
+}
+
+.college-name p {
+    color: #777;
+
+    margin-top: 5px;
+
+    font-size: 14px;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+nav {
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+
+    border-top: 1px solid #eeeeee;
+    border-bottom: 3px solid #f2a900;
+}
+
+nav a {
+    color: #173d83;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    padding: 15px 28px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #173d83;
+    color: white;
+}
+
+
+/* ================= HOME / HERO ================= */
+
+.home {
+    max-width: 1200px;
+
+    margin: 40px auto;
+
+    display: flex;
+
+    background-color: white;
+
+    border-radius: 6px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.09);
+}
+
+.home-text {
+    width: 50%;
+
+    padding: 65px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome {
+    color: #f2a900;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.home-text h2 {
+    color: #173d83;
+
+    font-family: Georgia, serif;
+
+    font-size: 44px;
+
+    line-height: 1.15;
+
+    margin-bottom: 20px;
+}
+
+.home-text p:not(.welcome) {
+    color: #666;
+
+    font-size: 16px;
+
+    max-width: 500px;
+
+    margin-bottom: 25px;
+}
+
+
+/* BUTTON */
+
+.button {
+    display: inline-block;
+
+    width: fit-content;
+
+    background-color: #173d83;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 11px 25px;
+
+    border-radius: 4px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #f2a900;
+}
+
+
+/* HERO IMAGE */
+
+.home-image {
+    width: 50%;
+}
+
+.home-image img {
+    width: 100%;
+
+    height: 390px;
+
+    object-fit: cover;
+}
+
+
+/* ================= COMMON HEADINGS ================= */
+
+.section-title {
+    color: #f2a900;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 5px;
+}
+
+.about h2,
+.courses h2,
+.placement h2,
+.contact h2 {
+    color: #173d83;
+
+    font-family: Georgia, serif;
+
+    font-size: 34px;
+
+    margin-bottom: 20px;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    max-width: 1050px;
+
+    margin: auto;
+
+    padding: 75px 30px;
+
+    text-align: center;
+}
+
+.about-text {
+    max-width: 850px;
+
+    margin: auto;
+
+    color: #666;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+}
+
+
+/* ================= GALLERY ================= */
+
+.gallery {
+    max-width: 1150px;
+
+    margin: auto;
+
+    padding: 0 25px 75px;
+
+    display: flex;
+
+    gap: 22px;
+}
+
+.gallery img {
+    width: 33.33%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    background-color: white;
+
+    padding: 5px;
+
+    border-radius: 5px;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ================= COURSES ================= */
+
+.courses {
+    background-color: #eef2f7;
+
+    padding: 75px 30px;
+
+    text-align: center;
+}
+
+.course-container {
+    max-width: 950px;
+
+    margin: 35px auto 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.course {
+    flex: 1;
+
+    max-width: 290px;
+
+    min-height: 175px;
+
+    background-color: white;
+
+    padding: 32px;
+
+    border-radius: 5px;
+
+    border-top: 4px solid #f2a900;
+
+    text-align: left;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.course:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.course h3 {
+    color: #173d83;
+
+    font-size: 24px;
+
+    margin-bottom: 10px;
+}
+
+.course p {
+    color: #666;
+
+    font-size: 15px;
+}
+
+
+/* ================= PLACEMENT ================= */
+
+.placement {
+    background-color: white;
+
+    padding: 75px 30px;
+
+    text-align: center;
+}
+
+.placement > p:last-child {
+    max-width: 800px;
+
+    margin: auto;
+
+    color: #666;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+    background-color: #eef2f7;
+
+    padding: 70px 30px;
+
+    text-align: center;
+}
+
+.contact p:last-child {
+    color: #666;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #173d83;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    font-size: 14px;
+}
+
+footer p:last-child {
+    margin-top: 4px;
+
+    color: #d7e0f0;
+
+    font-size: 12px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 800px) {
+
+    .topbar {
+        justify-content: center;
+
+        gap: 15px;
+
+        flex-wrap: wrap;
+    }
+
+    .college-header {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .college-name {
+        text-align: center;
+    }
+
+    .college-name h1 {
+        font-size: 23px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        padding: 11px 15px;
+    }
+
+    .home {
+        flex-direction: column;
+
+        margin: 25px 15px;
+    }
+
+    .home-text,
+    .home-image {
+        width: 100%;
+    }
+
+    .home-text {
+        padding: 45px 30px;
+    }
+
+    .home-text h2 {
+        font-size: 34px;
+    }
+
+    .home-image img {
+        height: 300px;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+
+    .course-container {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .course {
+        width: 100%;
+    }
+}
