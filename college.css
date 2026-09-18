@@ -30,13 +30,18 @@ body {
 
     gap: 30px;
 
-    padding: 8px 7%;
+    padding: 9px 7%;
 
     font-size: 13px;
 }
 
 .topbar span {
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.topbar span:hover {
+    color: #f2a900;
 }
 
 
@@ -48,24 +53,24 @@ header {
 
 .college-header {
     max-width: 1200px;
-    min-height: 115px;
+    min-height: 120px;
 
     margin: auto;
 
     display: flex;
     align-items: center;
 
-    gap: 20px;
+    gap: 22px;
 
-    padding: 18px 30px;
+    padding: 20px 30px;
 }
 
 
-/* LOGO */
+/* ================= LOGO ================= */
 
 .logo {
-    width: 70px;
-    height: 70px;
+    width: 75px;
+    height: 75px;
 
     background-color: #f2a900;
 
@@ -75,16 +80,22 @@ header {
     justify-content: center;
     align-items: center;
 
-    font-size: 19px;
+    font-size: 20px;
     font-weight: bold;
 
-    border-radius: 6px;
+    border-radius: 8px;
 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
 }
 
 
-/* COLLEGE NAME */
+/* ================= COLLEGE NAME ================= */
 
 .college-name h1 {
     color: #173d83;
@@ -99,7 +110,7 @@ header {
 .college-name p {
     color: #777;
 
-    margin-top: 5px;
+    margin-top: 6px;
 
     font-size: 14px;
 }
@@ -125,7 +136,7 @@ nav a {
     font-size: 14px;
     font-weight: bold;
 
-    padding: 15px 28px;
+    padding: 15px 30px;
 
     transition: 0.3s;
 }
@@ -147,12 +158,15 @@ nav a:hover {
 
     background-color: white;
 
-    border-radius: 6px;
+    border-radius: 12px;
 
     overflow: hidden;
 
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.09);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
 }
+
+
+/* ================= HOME TEXT ================= */
 
 .home-text {
     width: 50%;
@@ -170,9 +184,9 @@ nav a:hover {
     font-size: 13px;
     font-weight: bold;
 
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .home-text h2 {
@@ -184,7 +198,15 @@ nav a:hover {
 
     line-height: 1.15;
 
-    margin-bottom: 20px;
+    margin-bottom: 12px;
+}
+
+.home-text h3 {
+    color: #f2a900;
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
 }
 
 .home-text p:not(.welcome) {
@@ -198,7 +220,7 @@ nav a:hover {
 }
 
 
-/* BUTTON */
+/* ================= BUTTON ================= */
 
 .button {
     display: inline-block;
@@ -211,9 +233,9 @@ nav a:hover {
 
     text-decoration: none;
 
-    padding: 11px 25px;
+    padding: 12px 27px;
 
-    border-radius: 4px;
+    border-radius: 5px;
 
     font-weight: bold;
 
@@ -222,10 +244,12 @@ nav a:hover {
 
 .button:hover {
     background-color: #f2a900;
+
+    transform: translateY(-2px);
 }
 
 
-/* HERO IMAGE */
+/* ================= HERO IMAGE ================= */
 
 .home-image {
     width: 50%;
@@ -234,9 +258,11 @@ nav a:hover {
 .home-image img {
     width: 100%;
 
-    height: 390px;
+    height: 420px;
 
     object-fit: cover;
+
+    display: block;
 }
 
 
@@ -318,17 +344,17 @@ nav a:hover {
 
     padding: 5px;
 
-    border-radius: 5px;
+    border-radius: 8px;
 
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.10);
 
     transition: 0.3s;
 }
 
 .gallery img:hover {
-    transform: translateY(-5px);
+    transform: translateY(-7px);
 
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16);
 }
 
 
@@ -340,6 +366,28 @@ nav a:hover {
     padding: 75px 30px;
 
     text-align: center;
+}
+
+.section-subtitle {
+    color: #f2a900;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 5px;
+}
+
+.course-intro {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #666;
+
+    line-height: 1.7;
 }
 
 .course-container {
@@ -359,41 +407,69 @@ nav a:hover {
 
     max-width: 290px;
 
-    min-height: 175px;
+    min-height: 210px;
 
     background-color: white;
 
-    padding: 32px;
+    padding: 30px;
 
-    border-radius: 5px;
+    border-radius: 8px;
 
     border-top: 4px solid #f2a900;
 
     text-align: left;
 
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.08);
 
     transition: 0.3s;
 }
 
 .course:hover {
-    transform: translateY(-6px);
+    transform: translateY(-8px);
 
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.14);
+}
+
+.course-icon {
+    font-size: 32px;
+
+    margin-bottom: 10px;
 }
 
 .course h3 {
     color: #173d83;
 
-    font-size: 24px;
+    font-size: 25px;
 
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .course p {
     color: #666;
 
     font-size: 15px;
+
+    line-height: 1.6;
+}
+
+.course a {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: #173d83;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.course a:hover {
+    color: #f2a900;
 }
 
 
@@ -466,18 +542,27 @@ footer p:last-child {
 
 @media (max-width: 800px) {
 
+    /* TOP BAR */
+
     .topbar {
         justify-content: center;
 
         gap: 15px;
 
         flex-wrap: wrap;
+
+        padding: 8px 15px;
     }
+
+
+    /* HEADER */
 
     .college-header {
         flex-direction: column;
 
         text-align: center;
+
+        padding: 25px 20px;
     }
 
     .college-name {
@@ -488,6 +573,9 @@ footer p:last-child {
         font-size: 23px;
     }
 
+
+    /* NAVIGATION */
+
     nav {
         flex-wrap: wrap;
     }
@@ -495,6 +583,9 @@ footer p:last-child {
     nav a {
         padding: 11px 15px;
     }
+
+
+    /* HOME */
 
     .home {
         flex-direction: column;
@@ -515,17 +606,31 @@ footer p:last-child {
         font-size: 34px;
     }
 
+    .home-text h3 {
+        font-size: 19px;
+    }
+
     .home-image img {
         height: 300px;
     }
 
+
+    /* GALLERY */
+
     .gallery {
         flex-direction: column;
+
+        padding: 0 20px 60px;
     }
 
     .gallery img {
         width: 100%;
+
+        height: 240px;
     }
+
+
+    /* COURSES */
 
     .course-container {
         flex-direction: column;
@@ -535,5 +640,17 @@ footer p:last-child {
 
     .course {
         width: 100%;
+
+        max-width: 400px;
+    }
+
+
+    /* HEADINGS */
+
+    .about h2,
+    .courses h2,
+    .placement h2,
+    .contact h2 {
+        font-size: 29px;
     }
 }
